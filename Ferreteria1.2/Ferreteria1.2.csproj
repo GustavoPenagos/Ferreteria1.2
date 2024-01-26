@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01EBE5BC-AB34-47C9-983F-92C3FDCD4646}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ferreteria1._2</RootNamespace>
+    <AssemblyName>Ferreteria1.2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bodega.Designer.cs">
+      <DependentUpon>Bodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Control.Designer.cs">
+      <DependentUpon>Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empresa.Designer.cs">
+      <DependentUpon>Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Gastos.Designer.cs">
+      <DependentUpon>Gastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\ListaAbonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\ListaAbonos.Designer.cs">
+      <DependentUpon>ListaAbonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\ListaBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\ListaBodega.Designer.cs">
+      <DependentUpon>ListaBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\ListaEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\ListaEmpresa.Designer.cs">
+      <DependentUpon>ListaEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\ListaFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\ListaFacturas.Designer.cs">
+      <DependentUpon>ListaFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\ListaGasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\ListaGasto.Designer.cs">
+      <DependentUpon>ListaGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\ListaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\ListaProductos.Designer.cs">
+      <DependentUpon>ListaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\ListaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\ListaUsuarios.Designer.cs">
+      <DependentUpon>ListaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Usuarios.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registos\IngresarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registos\IngresarProductos.Designer.cs">
+      <DependentUpon>IngresarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registos\RegistoAbonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registos\RegistoAbonos.Designer.cs">
+      <DependentUpon>RegistoAbonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registos\RegistrarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registos\RegistrarEmpresa.Designer.cs">
+      <DependentUpon>RegistrarEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registos\RegistrarFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registos\RegistrarFacturas.Designer.cs">
+      <DependentUpon>RegistrarFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registos\RegistrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registos\RegistrarUsuario.Designer.cs">
+      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registos\RegistroBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registos\RegistroBodega.Designer.cs">
+      <DependentUpon>RegistroBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registos\RegistroGasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registos\RegistroGasto.Designer.cs">
+      <DependentUpon>RegistroGasto.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bodega.resx">
+      <DependentUpon>Bodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empresa.resx">
+      <DependentUpon>Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Gastos.resx">
+      <DependentUpon>Gastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listas\ListaBodega.resx">
+      <DependentUpon>ListaBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registos\IngresarProductos.resx">
+      <DependentUpon>IngresarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registos\RegistroBodega.resx">
+      <DependentUpon>RegistroBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
